@@ -1,0 +1,37 @@
+{
+    "name": "store_vue",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --mode production --env=production",
+        "start": "webpack-dev-server"
+    },
+    "author": "Tim Mouskhelichvili",
+    "license": "ISC",
+    "devDependencies": {
+        "@jasson2788/eslint-config-typescript": "^1.0.5",
+        "@typescript-eslint/eslint-plugin": "^2.5.0",
+        "@typescript-eslint/parser": "^2.5.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^3.2.0",
+        "eslint": "^6.6.0",
+        "eslint-plugin-vue": "^5.2.3",
+        "html-webpack-inline-source-plugin": "^1.0.0-beta.2",
+        "html-webpack-plugin": "^4.0.0-beta.8",
+        "mini-css-extract-plugin": "^0.8.0",
+        "node-sass": "^4.13.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "sass-loader": "^8.0.0",
+        "terser-webpack-plugin": "^2.2.1",
+        "ts-loader": "^6.2.1",
+        "typescript": "^3.6.4",
+        "vue": "^2.6.10",
+        "vue-loader": "^15.7.1",
+        "vue-router": "^3.1.3",
+        "vuex": "^3.1.1",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.9",
+        "webpack-dev-server": "^3.9.0"
+    }
+}
