@@ -11,6 +11,10 @@
         {
             "language": "typescriptreact",
             "autoFix": true
+        },
+        {
+            "language": "vue",
+            "autoFix": true
         }
     ],
     "editor.formatOnSave": true,

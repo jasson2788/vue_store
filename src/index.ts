@@ -1,7 +1,6 @@
 import Vue from 'vue';
+import App from './App.vue';
 
 new Vue({
-    data: {
-        message: 'Hello Vue!'
-    }
+    render: (h): Vue.VNode => h(App)
 }).$mount('#app');

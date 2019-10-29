@@ -1,4 +1,5 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -38,7 +39,10 @@ module.exports = (env) => ({
             {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
-                loader: 'ts-loader'
+                loader: 'ts-loader',
+                options: {
+                    appendTsSuffixTo: [/\.vue$/]
+                }
             },
             {
                 test: /\.scss$/,
@@ -73,6 +77,7 @@ module.exports = (env) => ({
         ]
     },
     plugins: [
+        new VueLoaderPlugin(),
         new Webpack.DefinePlugin({
             __PRODUCTION__: JSON.stringify(env === 'production')
         }),
