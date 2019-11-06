@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <div>{{ message }}</div>
-    <button v-on:click="changeMessage()">asdasd</button>
-  </div>
+  <header>asd</header>
 </template>
 <script lang="ts">
 import Vue from 'vue';
